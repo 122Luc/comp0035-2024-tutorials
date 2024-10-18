@@ -1,3 +1,21 @@
+# mypkg1/mymodule1.py
+# from pathlib import Path
+# import sys
+
+# # 获取当前文件的路径并解析到绝对路径
+# current_file = Path(__file__).resolve()
+
+# # 获取'tutorialpkg'的路径（即项目结构中的tutorialpkg目录）
+# tutorialpkg_dir = current_file.parents[1]
+
+# # 将'tutorialpkg'路径添加到sys.path中
+# sys.path.append(str(tutorialpkg_dir))
+
+# 从'mypkg2.mymodule2_1'中导入'calculate_area_of_circle'
+from tutorialpkg.mypkg2.mymodule2_1 import calculate_area_of_circle
+from tutorialpkg.mypkg2.mymodule2_2 import fetch_user_data
+
+
 mock_database = {
     1: {'name': 'Alice', 'email': 'alice@example.com', 'age': 30},
     42: {'name': 'Bob', 'email': 'bob@example.com', 'age': 45},
